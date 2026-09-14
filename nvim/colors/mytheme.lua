@@ -3,6 +3,14 @@ vim.o.background = "dark"
 
 local set = vim.api.nvim_set_hl
 
+vim.opt.guicursor = table.concat({
+    "n-v-c:block-Cursor",
+    "i-ci-ve:ver25-Cursor",
+    "r-cr-o:hor20-Cursor",
+    "t:block-TermCursor",
+    "a:blinkon0",
+}, ",")
+
 -- Palette
 local c = {
     kw      = "#fb7609",
@@ -11,8 +19,8 @@ local c = {
     tp      = "#00c5c7",
     plain   = "#f2f2f2",
     cm      = "#c7c7c7",
-    sl      = "#adadad",
-    slr     = "#adadad",
+    sl      = "#6e6e6e",
+    slr     = "#6e6e6e",
     bg      = "NONE",
     bg2     = "#000000",
     gutter  = "#333333",
@@ -24,14 +32,20 @@ local c = {
 }
 
 -- Base
+set(0, "Cursor",       { fg = "#000000", bg = "#ededed" })
+set(0, "TermCursor",   { fg = "#000000", bg = "#ededed" })
 set(0, "Normal",       { fg = c.plain, bg = c.bg })
 set(0, "NormalFloat",  { fg = c.plain, bg = c.bg2 })
 set(0, "FloatBorder",  { fg = c.gutter })
 set(0, "CursorLine",   { bg = c.bg2 })
-set(0, "CursorLineNr", { fg = c.plain, bold = true })
+set(0, "CursorLineNr", { fg = c.sl })
 set(0, "LineNr",       { fg = c.gutter })
-set(0, "Visual",       { bg = c.sel })
-set(0, "VisualNOS",    { bg = c.sel })
+set(0, "IblIndent", {
+    fg = "#949494",
+})
+set(0, "IblScope", { fg = "#b0b0b0", bold = true })
+set(0, "Visual",       { bg = c.sl })
+set(0, "VisualNOS",    { bg = c.sl })
 set(0, "Search",       { fg = "#000000", bg = c.warn })
 set(0, "IncSearch",    { fg = "#000000", bg = c.str })
 set(0, "VertSplit",    { fg = c.gutter })

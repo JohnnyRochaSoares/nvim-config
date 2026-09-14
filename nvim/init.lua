@@ -1,7 +1,12 @@
 -- Options
+vim.env.PATH =
+    "/Users/joaorochasoares/Documents/Codex/superfile-local/bin:"
+    .. (vim.env.PATH or "")
+
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.opt.expandtab = true
+vim.opt.number = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4

@@ -1,15 +1,18 @@
 return {
     {
         "neovim/nvim-lspconfig",
-        dependencies = { "hrsh7th/cmp-nvim-lsp" },
+
+        dependencies = {
+            "hrsh7th/cmp-nvim-lsp",
+        },
+
         config = function()
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-            -- Pyright
+            -- Python
             vim.lsp.config("pyright", {
-                cmd = { "pyright-langserver", "--stdio" },
-                root_markers = { "pyproject.toml", ".git" },
                 capabilities = capabilities,
+
                 settings = {
                     python = {
                         analysis = {
@@ -21,25 +24,87 @@ return {
                     },
                 },
             })
+
             vim.lsp.enable("pyright")
 
-            -- Clangd
+            -- C / C++
             vim.lsp.config("clangd", {
-                cmd = { "clangd" },
                 capabilities = capabilities,
             })
+
             vim.lsp.enable("clangd")
 
-            -- Hover keymap
-            vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show documentation" })
+            -- Rust
+            vim.lsp.config("rust_analyzer", {
+                capabilities = capabilities,
+            })
 
-            -- Diagnostics
+            vim.lsp.enable("rust_analyzer")
+
+            -- Go
+            vim.lsp.config("gopls", {
+                capabilities = capabilities,
+            })
+
+            vim.lsp.enable("gopls")
+
+            -- Shell / Bash
+            vim.lsp.config("bashls", {
+                capabilities = capabilities,
+            })
+
+            vim.lsp.enable("bashls")
+
+            -- Lua
+            vim.lsp.config("lua_ls", {
+                capabilities = capabilities,
+
+                settings = {
+                    Lua = {
+                        runtime = {
+                            version = "LuaJIT",
+                        },
+
+                        diagnostics = {
+                            globals = {
+                                "vim",
+                            },
+                        },
+
+                        workspace = {
+                            checkThirdParty = false,
+                            library = vim.api.nvim_get_runtime_file("", true),
+                        },
+
+                        telemetry = {
+                            enable = false,
+                        },
+                    },
+                },
+            })
+
+            vim.lsp.enable("lua_ls")
+
+            vim.keymap.set(
+                "n",
+                "K",
+                vim.lsp.buf.hover,
+                { desc = "Show documentation" }
+            )
+
             vim.diagnostic.config({
-                virtual_text = { prefix = "●" },
+                virtual_text = {
+                    prefix = "●",
+                },
+
                 signs = true,
                 underline = true,
                 update_in_insert = false,
-                float = { border = "rounded", source = "always" },
+
+                float = {
+                    border = "rounded",
+                    source = "always",
+                },
             })
         end,
     },

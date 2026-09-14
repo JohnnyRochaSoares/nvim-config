@@ -1,2 +1,7 @@
-# ==== MyPy Cache ==== #
-.mypy_cache/.mypy_cache/
+# ==== Cache ==== #
+.mypy_cache/
+.ruff_cache/
+__pycache__/
+
+# ==== .DS_Store ==== #
+.DS_Store

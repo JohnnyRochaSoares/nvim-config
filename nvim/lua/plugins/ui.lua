@@ -1,22 +1,9 @@
 return {
+    -- Mason: installs black, ruff, mypy
     {
         "williamboman/mason.nvim",
-        dependencies = {
-            "WhoIsSethDaniel/mason-tool-installer.nvim",
-        },
-        config = function()
-            require("mason").setup()
-
-            require("mason-tool-installer").setup({
-                ensure_installed = {
-                    "pyright",
-                    "clangd",
-                    "ruff",
-                    "mypy",
-                },
-                run_on_start = true, -- Garante que instala tudo ao abrir o Neovim
-            })
-        end,
+        build = ":MasonUpdate",
+        opts = {},
     },
 
     -- Trouble: diagnostics panel
