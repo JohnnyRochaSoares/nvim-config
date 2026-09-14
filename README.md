@@ -1,45 +1,71 @@
 # My current nvim-config
-My current NeoVim configuration.
 
-<a href="#" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg" height="13" style="width: auto; margin-right: 5px; vertical-align: middle;" alt="Neovim">Neovim</span><span style="background-color: #57A143; color: #fff; padding: 0 7px; height: 100%;">v0.10+</span></span></a>
-<a href="https://github.com/folke/lazy.nvim" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg" height="13" style="width: auto; margin-right: 5px; vertical-align: middle;" alt="lazy.nvim">Plugin Manager</span><span style="background-color: #000000; color: #fff; padding: 0 7px; height: 100%;">lazy.nvim</span></span></a>
-<a href="#" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg" height="13" style="width: auto; margin-right: 5px; vertical-align: middle;" alt="Lua">Lua</span><span style="background-color: #000080; color: #fff; padding: 0 7px; height: 100%;">5.1 (JIT 2.1)</span></span></a>
+My current NeoVim configuration: a dark, keyboard-first setup for Python, C/C++, Rust, Go, shell scripts, Lua, and Batch/CMD files.
+
+<a href="#" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg" height="13" style="width: auto; margin-right: 5px; vertical-align: middle;" alt="Neovim">Neovim</span><span style="background-color: #57A143; color: #fff; padding: 0 7px; height: 100%;">v0.11+</span></span></a>
+<a href="https://github.com/folke/lazy.nvim" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;">Plugin Manager</span><span style="background-color: #000000; color: #fff; padding: 0 7px; height: 100%;">lazy.nvim</span></span></a>
+<a href="#" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg" height="13" style="width: auto; margin-right: 5px; vertical-align: middle;" alt="Lua">Lua</span><span style="background-color: #000080; color: #fff; padding: 0 7px; height: 100%;">LuaJIT</span></span></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 
 <br>
 
-<a href="#" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" height="12" style="width: auto; margin-right: 5px; vertical-align: middle;" alt="Windows">Windows</span><span style="background-color: #0078D6; color: #fff; padding: 0 7px; height: 100%;">Supported</span></span></a>
-<a href="#"><img src="https://img.shields.io/badge/macOS-Supported-000000?logo=apple&logoColor=white" alt="macOS"></a>
-<a href="#" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" height="13" style="width: auto; margin-right: 4px; vertical-align: middle;" alt="Linux">Linux</span><span style="background-color: #E5A00D; color: #fff; padding: 0 7px; height: 100%;">Supported</span></span></a>
+![Windows](https://img.shields.io/badge/Windows-Compatible-0078D6?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODc1IDQ4NzUiPjxwYXRoIGZpbGw9IiMwMDc4RDYiIGQ9Ik0wIDBoMjMxMXYyMzEwSDB6bTI1NjQgMGgyMzExdjIzMTBIMjU2NHpNMCAyNTY0aDIzMTF2MjMxMUgwem0yNTY0IDBoMjMxMXYyMzExSDI1NjQiLz48L3N2Zz4=)
+![macOS](https://img.shields.io/badge/macOS-Compatible-000000?logo=apple&logoColor=white)
+<img alt="Linux" src="assets/badges/linux.svg">
 
 ---
 
+## This nvim-config has these features:
 
-## This nvim-config has 10 features:
+* **Plugin management:** [lazy.nvim](https://github.com/folke/lazy.nvim) bootstraps itself on first launch and loads every plugin from `nvim/lua/plugins/`;
 
-* Uses lazy.nvim for plugin manager;
+* **Custom theme and editor defaults:** `mytheme` provides a high-contrast dark colour scheme, styled completion and floating windows, plus styled diagnostics. True colour, line numbers, cursor line and four-space indentation are enabled; `<leader>r` reloads the theme;
 
-* Custom Theme (mytheme.lua);
+* **LSP:** Language-server support and completion capabilities for Python (Pyright with basic type checking), C/C++ (clangd), Rust (rust-analyzer), Go (gopls), Bash/Shell (bashls) and Lua (lua-language-server);
 
-* LSP:
+* **Smart autocompletion:** [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) integrates LSP suggestions and [LuaSnip](https://github.com/L3MON4D3/LuaSnip). Use `Tab` to accept the selected completion and `Ctrl-Space` to open it manually;
 
-    * Python: PyRight with basic type checking;
+* **Formatting:** [conform.nvim](https://github.com/stevearc/conform.nvim) formats on save, with LSP fallback. It uses Ruff (Python), clang-format (C/C++), rustfmt (Rust), gofumpt (Go), shfmt (Shell/Bash) and stylua (Lua). `<leader>f` formats the current file on demand;
 
-    * C/C++: Clangd;
+* **Asynchronous linting:** [nvim-lint](https://github.com/mfussenegger/nvim-lint) runs on opening, writing and leaving insert mode when the relevant executable is available: Ruff + MyPy, clang-tidy, Clippy, golangci-lint and ShellCheck;
 
-* Smart Autocompletion: nvim-cmp setup integrated with LSP and snippet expansion via LuaSnip;
+* **Advanced syntax support:** [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) provides highlighting, indentation and expression-based folds for Python, C, C++, Rust, Go, Bash, Lua and Batch/CMD. Batch/CMD uses the external `tree-sitter-batch` grammar and the repository includes custom queries;
 
-* Format on save: Integration with conform.nvim for automatic formatting when saving files (ruff);
+* **Tool installation:** [Mason](https://github.com/mason-org/mason.nvim), Mason LSP Config and Mason DAP manage language servers and debug adapters. The configured servers are Pyright, clangd, rust-analyzer, gopls, bashls and lua-language-server;
 
-* Asynchronous Linting: Uses Ruff and MyPy;
+* **Debugging:** [nvim-dap](https://github.com/mfussenegger/nvim-dap) and its UI support Python, C/C++, Go, Bash and Lua debugging. Mason installs debugpy, codelldb, Delve and the Bash debug adapter; the DAP UI opens with a session and closes when it ends;
 
-* Advanced Syntax Highlighting: nvim-treesitter configured for syntax coloring;
+* **Testing:** [neotest](https://github.com/nvim-neotest/neotest) with the Python adapter runs the nearest test (`<leader>tr`) or the current file (`<leader>tf`), and provides a summary (`<leader>ts`) and output window (`<leader>to`);
 
-* Dependency management: Easy Installation of third-party formatters and linters using mason.nvim;
+* **Search and navigation:** [Telescope](https://github.com/nvim-telescope/telescope.nvim) with native FZF finds files (`Ctrl-P`), buffers (`Ctrl-B`), project text (`<leader>sg`), document symbols (`<leader>sd`), workspace symbols (`<leader>sw`) and LSP references (`<leader>sr`);
 
-* Diagnostics Panel: trouble-nvim integration to list all project errors, warnings and issues in a single workspace view;
+* **Git workflow:** [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) shows, navigates (`]c` / `[c`), previews (`<leader>hp`) and stages hunks (`<leader>hs`), shows blame (`<leader>hb`) and opens a diff (`<leader>hd`). [LazyGit](https://github.com/kdheepak/lazygit.nvim) opens with `<leader>git` or for the current file with `<leader>fgit`;
 
-* Markdown support: Live in browser preview for Markdown files using markdown-preview.nvim.
+* **File picker:** [Superfile](https://github.com/anaypurohit0907/superfile.nvim) opens its terminal picker with `<leader>spf` and returns the selected file to NeoVim;
+
+* **Terminal and key discovery:** [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) opens a rounded floating Zsh terminal with `<leader>k`; [which-key.nvim](https://github.com/folke/which-key.nvim) shows mappings with `<leader>?`;
+
+* **UI helpers:** indent guides from [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim), a diagnostics panel from [trouble.nvim](https://github.com/folke/trouble.nvim), and browser preview for Markdown through [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) (`:MarkdownPreview` / `:MarkdownPreviewToggle`);
+
+* **Built-in help:** `K` opens LSP documentation for the symbol under the cursor; diagnostics use rounded floating windows and inline indicators.
+
+<br>
+
+---
+
+## Plugin inventory:
+
+### Main plugins
+
+* lazy.nvim; mytheme; nvim-cmp; LuaSnip; nvim-lspconfig; Mason; mason-lspconfig; nvim-lint; conform.nvim;
+
+* nvim-treesitter; Telescope; telescope-fzf-native; Gitsigns; LazyGit; Superfile; toggleterm; which-key; indent-blankline; trouble.nvim; markdown-preview.nvim;
+
+* nvim-dap; nvim-dap-ui; mason-nvim-dap; nvim-dap-python; nvim-dap-go; neotest; neotest-python.
+
+### Supporting dependencies
+
+* cmp-nvim-lsp; plenary.nvim; nvim-nio; FixCursorHold.nvim; one-small-step-for-vimkind.
 
 <br>
 
@@ -47,54 +73,50 @@ My current NeoVim configuration.
 
 ## Requirements:
 
-* NeoVim >= 0.10.0;
+* NeoVim >= 0.11.0;
 
-* Git >= 2.19.0: Required by lazy.nvim to download and manage plugins;
+* Git >= 2.19.0: required by lazy.nvim to download and manage plugins;
 
-* C Compiler (gcc or clang) with support to C99/C11: Required by nvim-treesitter to compile language parsers;
+* A C compiler with C99/C11 support and `make`: required to compile Tree-sitter parsers and Telescope's native FZF extension;
 
-* Node.js & npm >= 18.0.0: Required by markdown-preview.nvim to build the preview application;
+* Node.js and npm >= 18: required by bashls, markdown-preview.nvim and some Mason-managed tools;
 
-* Python (with pip & venv) >= 3.8: Required by mason.nvim to install and isolate Python tools (Ruff, MyPy); 
+* Python >= 3.8 with pip and venv: required by Mason and Python tooling;
 
-* Nerd Font (e.g., Monaco Nerd Font, JetBrainsMono Nerd Font): Required by trouble.nvim, nvim-cmp and UI elements to render icons properly in your terminal.
+* A [Nerd Font](https://www.nerdfonts.com/): recommended for icons in completion menus and plugin UI;
+
+* Optional external programs for their matching features: `lazygit`, `spf` (Superfile), `ruff`, `mypy`, `clang-format`, `clang-tidy`, `rustfmt`, `cargo`, `gofumpt`, `golangci-lint`, `shfmt`, `shellcheck` and `stylua`. Linters only run when their executable is available.
 
 <br>
 
 ---
 
-### If you don't have it installed, open the terminal and run:
+### If you don't have the base requirements installed, open the terminal and run:
 
 #### Windows via Winget:
 
-```bash
+```powershell
 winget install Neovim.Neovim Git.Git OpenJS.NodeJS MSYS2.MSYS2 Python.Python.3
 ```
 
 #### Windows via Scoop:
 
-```bash
-scoop install neovim git gcc nodejs python
+```powershell
+scoop install neovim git gcc make nodejs python
 ```
 
 #### Windows via Chocolatey:
 
-```bash
-choco install neovim git mingw nodejs python
+```powershell
+choco install neovim git mingw make nodejs python
 ```
 
 ---
 
-#### macOS via HomeBrew:
+#### macOS via Homebrew:
 
 ```bash
-brew install neovim git node gcc python
-```
-
-#### macOS via Port:
-
-```bash
-sudo port install neovim git gcc13 nodejs20 npm10 python314
+brew install neovim git node gcc make python
 ```
 
 ---
@@ -102,7 +124,7 @@ sudo port install neovim git gcc13 nodejs20 npm10 python314
 #### Linux via pacman (Arch Linux-based):
 
 ```bash
-sudo pacman -S neovim git gcc nodejs npm python python-pip
+sudo pacman -S neovim git base-devel nodejs npm python python-pip
 ```
 
 #### Linux via apt (Debian-based):
@@ -114,13 +136,13 @@ sudo apt update && sudo apt install neovim git build-essential nodejs npm python
 #### Linux via dnf (Fedora-based):
 
 ```bash
-sudo dnf install neovim git gcc-c++ nodejs npm python3 python3-pip
+sudo dnf install neovim git gcc-c++ make nodejs npm python3 python3-pip
 ```
 
 #### Linux via zypper (openSUSE-based):
 
 ```bash
-sudo zypper install neovim git gcc-c++ nodejs npm python3 python3-pip
+sudo zypper install neovim git gcc-c++ make nodejs npm python3 python3-pip
 ```
 
 <br>
@@ -129,33 +151,38 @@ sudo zypper install neovim git gcc-c++ nodejs npm python3 python3-pip
 
 ## Installation:
 
+The repository keeps the NeoVim configuration inside the `nvim/` directory. The commands below back up an existing configuration and copy that directory to the standard NeoVim location.
+
 ### macOS and Linux:
 
 #### Via HTTPS:
 
 ```bash
-git clone https://github.com/JohnnyRochaSoares/nvim-config.git                      # Clone the GitHub repository
-cd nvim-config                                                                      # Go to the project directory
-cp -r ~/.config/nvim ~/.config/nvim.backup 2>/dev/null                              # Backup the existing configuration (if it exists)
-mkdir -p ~/.config/nvim && cp -r . ~/.config/nvim                                   # Install the new configuration
+git clone https://github.com/JohnnyRochaSoares/nvim-config.git
+cd nvim-config
+mv ~/.config/nvim ~/.config/nvim.backup 2>/dev/null || true
+mkdir -p ~/.config
+cp -R nvim ~/.config/nvim
 ```
 
 #### Via SSH:
 
-```
-git clone git@github.com:JohnnyRochaSoares/nvim-config.git                          # Clone the GitHub repository
-cd nvim-config                                                                      # Go to the project directory
-cp -r ~/.config/nvim ~/.config/nvim.backup 2>/dev/null                              # Backup existing configuration (if it exists)
-mkdir -p ~/.config/nvim && cp -r . ~/.config/nvim                                   # Install the new configuration
+```bash
+git clone git@github.com:JohnnyRochaSoares/nvim-config.git
+cd nvim-config
+mv ~/.config/nvim ~/.config/nvim.backup 2>/dev/null || true
+mkdir -p ~/.config
+cp -R nvim ~/.config/nvim
 ```
 
 #### Via GitHub CLI:
 
-```
-gh repo clone JohnnyRochaSoares/nvim-config                                         # Clone the GitHub repository
-cd nvim-config                                                                      # Go to the project directory
-cp -r ~/.config/nvim ~/.config/nvim.backup 2>/dev/null                              # Backup existing configuration (if it exists)
-mkdir -p ~/.config/nvim && cp -r . ~/.config/nvim                                   # Install the new configuration
+```bash
+gh repo clone JohnnyRochaSoares/nvim-config
+cd nvim-config
+mv ~/.config/nvim ~/.config/nvim.backup 2>/dev/null || true
+mkdir -p ~/.config
+cp -R nvim ~/.config/nvim
 ```
 
 <br>
@@ -165,60 +192,37 @@ mkdir -p ~/.config/nvim && cp -r . ~/.config/nvim                               
 #### Via HTTPS:
 
 ```powershell
-git clone https://github.com/JohnnyRochaSoares/nvim-config.git                      # Clone the GitHub repository
-cd nvim-config                                                                      # Go to the project directory
-cp -Recurse $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.backup 2>$null            # Backup existing configuration (if it exists)
-mkdir -Force $env:LOCALAPPDATA\nvim; cp -Recurse * $env:LOCALAPPDATA\nvim           # Install the new configuration
+git clone https://github.com/JohnnyRochaSoares/nvim-config.git
+cd nvim-config
+if (Test-Path $env:LOCALAPPDATA\nvim) { Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.backup -Force }
+Copy-Item -Recurse nvim $env:LOCALAPPDATA\nvim
 ```
 
 #### Via SSH:
 
 ```powershell
-git clone git@github.com:JohnnyRochaSoares/nvim-config.git                          # Clone the GitHub repository
-cd nvim-config                                                                      # Go to the project directory
-cp -Recurse $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.backup 2>$null            # Backup existing configuration (if it exists)
-mkdir -Force $env:LOCALAPPDATA\nvim; cp -Recurse * $env:LOCALAPPDATA\nvim           # Install the new configuration
+git clone git@github.com:JohnnyRochaSoares/nvim-config.git
+cd nvim-config
+if (Test-Path $env:LOCALAPPDATA\nvim) { Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.backup -Force }
+Copy-Item -Recurse nvim $env:LOCALAPPDATA\nvim
 ```
 
 #### Via GitHub CLI:
 
 ```powershell
-gh repo clone JohnnyRochaSoares/nvim-config                                         # Clone the GitHub repository
-cd nvim-config                                                                      # Go to the project directory
-cp -Recurse $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.backup 2>$null            # Backup existing configuration (if it exists)
-mkdir -Force $env:LOCALAPPDATA\nvim; cp -Recurse * $env:LOCALAPPDATA\nvim           # Install the new configuration
+gh repo clone JohnnyRochaSoares/nvim-config
+cd nvim-config
+if (Test-Path $env:LOCALAPPDATA\nvim) { Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.backup -Force }
+Copy-Item -Recurse nvim $env:LOCALAPPDATA\nvim
 ```
 
 <br>
 
-### Windows (CMD)
+---
 
-#### Via HTTPS:
+## First launch:
 
-```bash
-git clone https://github.com/JohnnyRochaSoares/nvim-config.git                      & :: Clone the GitHub repository
-cd nvim-config                                                                      & :: Go to the project directory
-xcopy "%LOCALAPPDATA%\nvim" "%LOCALAPPDATA%\nvim.backup" /E /I /H /Y >nul 2>&1      & :: Backup existing configuration (if it exists)
-xcopy . "%LOCALAPPDATA%\nvim\" /E /I /H /Y                                          & :: Install the new configuration
-```
-
-#### Via SSH:
-
-```bash
-git clone git@github.com:JohnnyRochaSoares/nvim-config.git                          & :: Clone the GitHub repository
-cd nvim-config                                                                      & :: Go to the project directory
-xcopy "%LOCALAPPDATA%\nvim" "%LOCALAPPDATA%\nvim.backup" /E /I /H /Y >nul 2>&1      & :: Backup existing configuration (if it exists)
-xcopy . "%LOCALAPPDATA%\nvim\" /E /I /H /Y                                          & :: Install the new configuration
-```
-
-#### Via GitHub CLI:
-
-```bash
-gh repo clone JohnnyRochaSoares/nvim-config                                         & :: Clone the GitHub repository
-cd nvim-config                                                                      & :: Go to the project directory
-xcopy "%LOCALAPPDATA%\nvim" "%LOCALAPPDATA%\nvim.backup" /E /I /H /Y >nul 2>&1      & :: Backup existing configuration (if it exists)
-xcopy . "%LOCALAPPDATA%\nvim\" /E /I /H /Y                                          & :: Install the new configuration
-```
+Open NeoVim with `nvim`. lazy.nvim installs the plugins automatically. Use `:Lazy` to inspect or update plugins, `:Mason` to manage language servers and debug adapters, and `:checkhealth` if a feature is not working.
 
 <br>
 
@@ -226,27 +230,20 @@ xcopy . "%LOCALAPPDATA%\nvim\" /E /I /H /Y                                      
 
 ## If you want to go back:
 
-If you want to go back to your previous configuration, open your terminal and run:
+The previous configuration is saved as `nvim.backup` by the installation commands. Remove the installed configuration and restore it.
 
 ### macOS/Linux:
 
 ```bash
-rm -rf ~/.config/nvim                                                               # Remove current configuration
-cp -r ~/.config/nvim.backup ~/.config/nvim                                          # Restore backup configuration
+rm -rf ~/.config/nvim
+mv ~/.config/nvim.backup ~/.config/nvim
 ```
 
 ### Windows (PowerShell):
 
 ```powershell
-Remove-Item -Recurse -Force $env:LOCALAPPDATA\nvim 2>$null                          # Remove current configuration
-cp -Recurse $env:LOCALAPPDATA\nvim.backup $env:LOCALAPPDATA\nvim                    # Restore backup configuration
-```
-
-### Windows (CMD):
-
-```bash
-rmdir /s /q "%LOCALAPPDATA%\nvim" 2>nul                                             & :: Remove current configuration
-xcopy "%LOCALAPPDATA%\nvim.backup" "%LOCALAPPDATA%\nvim\" /E /I /H /Y               & :: Restore backup configuration
+Remove-Item -Recurse -Force $env:LOCALAPPDATA\nvim
+Move-Item $env:LOCALAPPDATA\nvim.backup $env:LOCALAPPDATA\nvim
 ```
 
 <br>
@@ -260,6 +257,7 @@ If you wish to contribute, feel free to do so!
 <br>
 
 ---
+
 ## License:
-This project is licensed under the MIT License.
-See the [LICENSE](LICENSE) file for more information.
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
