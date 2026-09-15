@@ -2,10 +2,12 @@
 
 My current NeoVim configuration: a dark, keyboard-first setup for Python, C/C++, Rust, Go, shell scripts, Lua, and Batch/CMD files.
 
-<a href="#" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg" height="13" style="width: auto; margin-right: 5px; vertical-align: middle;" alt="Neovim">Neovim</span><span style="background-color: #57A143; color: #fff; padding: 0 7px; height: 100%;">v0.11+</span></span></a>
-<a href="https://github.com/folke/lazy.nvim" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;">Plugin Manager</span><span style="background-color: #000000; color: #fff; padding: 0 7px; height: 100%;">lazy.nvim</span></span></a>
-<a href="#" style="text-decoration: none; display: inline-block; vertical-align: middle; position: relative; top: -7.5px;"><span style="display: inline-flex; align-items: center; height: 20px; font-family: Verdana, Geneva, sans-serif; font-size: 11px; line-height: 20px; border-radius: 3px; overflow: hidden; vertical-align: middle;"><span style="display: inline-flex; align-items: center; background-color: #555; color: #fff; padding: 0 7px; height: 100%;"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg" height="13" style="width: auto; margin-right: 5px; vertical-align: middle;" alt="Lua">Lua</span><span style="background-color: #000080; color: #fff; padding: 0 7px; height: 100%;">LuaJIT</span></span></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+<img alt="Neovim v0.11+" src="assets/badges/neovim.svg">
+<img alt="Plugin Manager lazy.nvim" src="assets/badges/plugin-manager.svg">
+<img alt="Lua LuaJIT" src="assets/badges/lua.svg">
+<img alt="License MIT" src="assets/badges/license.svg">
+
+<br>
 
 <br>
 

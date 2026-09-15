@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="20" role="img" aria-label="Lua: LuaJIT">
+  <title>Lua: LuaJIT</title>
+  <linearGradient id="shade" x2="0" y2="100%">
+    <stop offset="0" stop-color="#fff" stop-opacity=".12"/>
+    <stop offset="1" stop-opacity=".08"/>
+  </linearGradient>
+  <clipPath id="clip"><rect width="96" height="20" rx="3"/></clipPath>
+  <g clip-path="url(#clip)">
+    <rect width="48" height="20" fill="#555"/>
+    <rect x="48" width="48" height="20" fill="#111B89"/>
+    <rect width="96" height="20" fill="url(#shade)"/>
+  </g>
+  <circle cx="13" cy="10" r="7" fill="#000F8F"/>
+  <circle cx="16" cy="6" r="1.7" fill="#fff"/>
+  <circle cx="18.4" cy="4.3" r="1.1" fill="#fff"/>
+  <text x="8.1" y="12.3" font-family="Verdana,DejaVu Sans,sans-serif" font-size="5.2" fill="#fff">Lua</text>
+  <g font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" fill="#fff">
+    <text x="24" y="14.2">Lua</text>
+    <text x="54" y="14.2">LuaJIT</text>
+  </g>
+</svg>

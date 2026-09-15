@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155" height="20" role="img" aria-label="Plugin Manager: lazy.nvim">
+  <title>Plugin Manager: lazy.nvim</title>
+  <linearGradient id="shade" x2="0" y2="100%">
+    <stop offset="0" stop-color="#fff" stop-opacity=".12"/>
+    <stop offset="1" stop-opacity=".08"/>
+  </linearGradient>
+  <clipPath id="clip"><rect width="155" height="20" rx="3"/></clipPath>
+  <g clip-path="url(#clip)">
+    <rect width="93" height="20" fill="#555"/>
+    <rect x="93" width="62" height="20" fill="#000"/>
+    <rect width="155" height="20" fill="url(#shade)"/>
+  </g>
+  <g font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" fill="#fff">
+    <text x="46.5" y="14.2" text-anchor="middle">Plugin Manager</text>
+    <text x="100" y="14.2">lazy.nvim</text>
+  </g>
+</svg>
