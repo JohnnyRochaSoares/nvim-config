@@ -2,10 +2,12 @@
 
 My current NeoVim configuration: a dark, keyboard-first setup for Python, C/C++, Rust, Go, shell scripts, Lua, and Batch/CMD files.
 
-<img alt="Neovim v0.11+" src="assets/badges/neovim.svg">
-<img alt="Plugin Manager lazy.nvim" src="assets/badges/plugin-manager.svg">
-<img alt="Lua LuaJIT" src="assets/badges/lua.svg">
-<img alt="License MIT" src="assets/badges/license.svg">
+<p>
+  <img alt="Neovim v0.11+" src="assets/badges/neovim.svg">
+  <img alt="Plugin Manager lazy.nvim" src="assets/badges/plugin-manager.svg">
+  <img alt="Lua LuaJIT" src="assets/badges/lua.svg">
+  <img alt="License MIT" src="assets/badges/license.svg">
+<p>
 
 <br>
 
