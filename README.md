@@ -7,7 +7,7 @@ My current NeoVim configuration: a dark, keyboard-first setup for Python, C/C++,
   <img alt="Plugin Manager lazy.nvim" src="assets/badges/plugin-manager.svg">
   <img alt="Lua LuaJIT" src="assets/badges/lua.svg">
   <img alt="License MIT" src="assets/badges/license.svg">
-<p>
+</p>
 
 ![Windows](https://img.shields.io/badge/Windows-Compatible-0078D6?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODc1IDQ4NzUiPjxwYXRoIGZpbGw9IiMwMDc4RDYiIGQ9Ik0wIDBoMjMxMXYyMzEwSDB6bTI1NjQgMGgyMzExdjIzMTBIMjU2NHpNMCAyNTY0aDIzMTF2MjMxMUgwem0yNTY0IDBoMjMxMXYyMzExSDI1NjQiLz48L3N2Zz4=)
 ![macOS](https://img.shields.io/badge/macOS-Compatible-000000?logo=apple&logoColor=white)
